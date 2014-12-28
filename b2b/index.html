@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Home</title>
+		<link rel="icon" href="images/fisherMan_logo.png">
+		<link rel="shortcut icon" href="images/fisherMan_logo.png" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/zerogrid.css" >
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/form.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.1.1.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/forms.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/tms-0.4.1.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.slider_wrapper')._TMS({
+					show:0,
+					pauseOnHover:false,
+					prevBu:'.prev',
+					nextBu:'.next',
+					playBu:false,
+					duration:800,
+					preset:'fade',
+					pagination:true,
+					pagNums:false,
+					slideshow:8000,
+					numStatus:false,
+					banners: 'fade',
+					waitBannerAnimation:false,
+					progressBar:false
+				});
+			});
+			$(document).ready(function(){
+				!function(){
+			var map=[]
+			 ,names=[]
+			 ,win=$(window)
+			 ,header=$('header')
+			 ,currClass
+			$('.content').each(function(n){
+			 map[n]=this.offsetTop
+			 names[n]=$(this).attr('id')
+			})
+			win
+			 .on('scroll',function(){
+				var i=0
+				while(map[i++]<=win.scrollTop());
+				if(currClass!==names[i-2])
+				currClass=names[i-2]
+				header.removeAttr("class").addClass(names[i-2])
+			 })
+			}(); });
+					function goToByScroll(id){
+				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+				}
+				$(document).ready(function(){
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+		</script>
+	</head>
+	<body class="">
+<!--==============================header=================================-->
+		<header class="page1">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="menu_block">
+							<nav class="">
+								<ul class="sf-menu">
+									<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Home</a> <strong class="hover"></strong></li>
+									<li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">About Us</a><strong class="hover"></strong></li>
+									<li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">Food</a> <strong class="hover"></strong></li>
+									<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">Reservations</a> <strong class="hover"></strong></li>
+									<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Contact Us</a> <strong class="hover"></strong></li>
+								</ul>
+							</nav>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+<!--=======content================================-->
+		<div id="page1" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<h2><img src="images/fisherMan_logo.png"></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="page2" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slogan">
+							<h3>Where Great <a onClick="goToByScroll('page3'); return false;" href="#"><span>Food</span></a> Is Just the <a onClick="goToByScroll('page4'); return false;" href="#"><em>Beginning</em></a></h3>
+							<div class="text1">
+								Rich, Sumptuous Flavours, Unparalleled Taste and Texture, and a Truly Remarkable Setting.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div>
+							<img src="images/box_img1.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div>
+							<img src="images/box_img2.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div>
+							<img src="images/box_img3.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div>
+							<img src="images/box_img4.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page3" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slogan">							
+							<h3>FOOD</h3>
+							<div class="text1">
+								Attention To Detail Is Something We Particularly Pride Ourselves On At Breakfast 2 Breakfast. Customer satisfaction has always been and always will be our main priority. This is why we guarantee exceptional quality and thorough cleanliness control from A to Z.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div>
+							<img src="images/main_dish.png" alt="">
+							<div class="text1"><a href="#">MAIN COURSE EXAMPLE </a></div></br> 9+ Wagyu Beef Seared on the “Plancha” Long Potato Fries cooked in Goose Fat Sweet Bread and Mushroom in a Bone Marrow Grey Shallot
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div>
+							<img src="images/box1_img2.png" alt="">
+							<div class="text1"></br> <a href="#">BEST BURGER IN TOWN </a></div></br> For those who wish for fast food, we have unlimited menu
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div>
+							<img src="images/box1_img3.png" alt="">
+							<div class="text1"></br> <a href="#">MIX OF THE FINEST SEAFOOD</a></div></br> Atlantic Salmon Filet mango salsa.Sesame Seared Ahi Tuna Steak* wasabi-soy vinaigrette, wakame cucumber salad. Jumbo Lump Crab Cakes chipotle tartar sauce and mango salsa. Chilean Sea Bass corn relish. Swordfish Steak* cherry tomato-olive relish
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div>
+							<img src="images/box1_img4.png" alt="">
+							<div class="text1"></br><a href="#">STEAK OUT</a></div></br> Double Cut Lamb Rib Chops 18 ounce with fresh mint sauce.Prime Bone-In Rib-Eye Steak 24 ounce. Prime Double Cut New York Strip 36 ounce for 2-3 persons sliced tableside. Sauces: Brandy Peppercorn, Hollandaise, Bearnaise and Chimichurri. Classic Oscar: Jumbo Lump Crabmeat, Asparagus and Hollandaise Sauce.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page4" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<h3>Reservations</h3>
+					</div>
+				</div>
+				<div class="companies">
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/logo1.png" alt="">
+							<div class="text1">Download our app</div>For Reservations and Food Pre-ordreing
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page5" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slogan">
+							<h3>Get in Touch</h3>
+							<h3>IT'S THE PLACE TO BE</h3>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="map">
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<div class="text1">Address</div>
+							<address>
+								<dl>
+									<dt>Breakfast 2 Breakfast Rest.<br>
+									8901 City Center,<br>
+									Sulimani, Iraq.
+									</dt>
+									<dd><span>Main:</span>+964 771-1099-903</dd>
+									<dd><span>Complaints:</span>+964 790-2780-166</dd>
+									<dd><span>Fax:</span>+964 771-1099-909</dd>
+									<dd>E-mail: <a href="#" class="link-1">info@b2b.com</a></dd>
+								</dl>
+							</address>
+						</div>
+					</div>
+					
+					<div class="col-2-4">
+						<div class="wrap-col">
+							<div class="text1">Ask a Question</div>
+							<form id="form">
+							<div class="success_wrapper">
+							<div class="success">Contact form submitted!<br>
+							<strong>We will be in touch soon.</strong> </div></div>
+							<fieldset>
+							<label class="name">
+							<input type="text" value="Name:">
+							<br class="clear">
+							<span class="error error-empty">*This is not a valid name.</span><span class="empty error-empty">*This field is required.</span> </label>
+							<label class="email">
+							<input type="text" value="E-mail:">
+							<br class="clear">
+							<span class="error error-empty">*This is not a valid email address.</span><span class="empty error-empty">*This field is required.</span> </label>
+							<label class="message">
+							<textarea>Message:</textarea>
+							<br class="clear">
+							<span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> </label>
+							<div class="clear"></div>
+							<div class="btns"><a data-type="submit" class="link1">Send</a>
+							<div class="clear"></div>
+							</div></fieldset></form>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="copy">
+							<a onClick="goToByScroll('page1'); return false;" href="#"><img src="images/fisherMan_logo.png" alt=""></a> <br>  &copy; 2014 | <a href="#">All Rights Reserved</a> <br> <a href="Admin_Panel">Admin Reservation Control</a>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+	</body>
+</html>
